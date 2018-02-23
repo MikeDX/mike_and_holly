@@ -21,8 +21,8 @@ size = 25;
 y = 200;
 x=0;
 
-loop
-x+=5;
+while(x<500)
+x+=8;
 
 
 
@@ -36,7 +36,40 @@ end
 
 end
 
+fade_off();
+while(fading);
+frame;
 
+end
+
+clear_screen();
+
+put(0,6,320,240);
+put(0,7,392,233);
+size=50;
+x=300;
+y=400;
+
+fade_on();
+while(fading);
+
+frame;
+
+end
+
+loop
+
+x=mouse.x;
+y=mouse.y;
+
+frame;
+
+end
+
+
+
+// 392
+// 233
 
 END
 
